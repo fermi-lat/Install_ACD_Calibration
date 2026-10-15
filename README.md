@@ -58,11 +58,12 @@ to
 os.system(sysCom)
 ```  
 should be commented out 
-###For Running Normally:
+
+### For Running Normally (By default all of there are already commented out, just check to make sure before running):
 - Uncomment the lines that were commented out for TESTING (see above) in  AcdReportUtil and AcdReportTrend 
 
 
-## How to run (This process is the same for Testing or Normal cases):
+# How to run (This process is the same for Testing or Normal cases):
 - Go to the folder where the setup is installed and run 
 ```bash 
 source source_compiled_files.sh
