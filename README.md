@@ -17,15 +17,16 @@ cd ACD_Calibration
 ``` 
 and 
 ```bash
-git clone git@github.com:adesai90/ACD_Calibrations_adesai_s3df.git ACD_calib_github_software
+git clone git@github.com:fermi-lat/Install_ACD_Calibration.git ACD_calib_github_software
 ``` 
 > [!NOTE]
-> Make sure the github folder name is set to "ACD_calib_github_software". 
+> Make sure the github folder name is set to "ACD_calib_github_software" and not "Install_ACD_Calibration". 
 
 FOLLOW THESE STEPS BEFORE INSTALLING: 
 - Before Setup, You NEED a conda environment. In the default case, miniconda is used, with a setup pointing to the directory of the user abhishek. You need to:
-    1. Install miniconda (If you use anything other than miniconda, make the changes in the setup.sh file too, namely In setup_package.sh, change CONDA_PREFIX path from "$HOME/miniconda" to your directory with the newly installed conda)
-    2. You also need to create a special conda environemnt called "acd_env" which will be used by this code. (Note you can use some other name, if you use anything other than acd_env, make the changes in setup_package.sh) After activating conda run:
+    1. Make sure the github folder name is set to "ACD_calib_github_software" and not "Install_ACD_Calibration". 
+    2. Install miniconda (If you use anything other than miniconda, make the changes in the setup.sh file too, namely In setup_package.sh, change CONDA_PREFIX path from "$HOME/miniconda" to your directory with the newly installed conda)
+    3. You also need to create a special conda environemnt called "acd_env" which will be used by this code. (Note you can use some other name, if you use anything other than acd_env, make the changes in setup_package.sh) After activating conda run:
     ```bash 
     conda create -n acd_env -c conda-forge python=2.7.18 root=6.16.00 xrootd=4.9.1 scons=3.1.2 f2c gcc_linux-64=7 gxx_linux-64=7 gfortran_linux-64=7 libtiff swig
     ```
