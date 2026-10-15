@@ -3,8 +3,12 @@
 - DGreen_ACD_Calib_Constants_Memo.pdf: Memo from David Green regarding setup of ACD calibrations in previous (afs) setup from https://confluence.slac.stanford.edu/spaces/SCIGRPS/pages/132221608/ACD+Calibrations+Monthly+Update
 - Other supplimentary files include the fermi_ground_bin_files are supplemntary files used to help with the install.
 
-
-
+# PRERequisite:
+1. Install miniconda (If you use anything other than miniconda, make the changes in the setup.sh file too, namely In setup_package.sh, change CONDA_PREFIX path from "$HOME/miniconda" to your directory with the newly installed conda)
+2. You also need to create a special conda environemnt called "acd_env" which will be used by this code. (Note you can use some other name, if you use anything other than acd_env, make the changes in setup_package.sh) After activating conda run:
+    ```bash 
+    conda create -n acd_env -c conda-forge python=2.7.18 root=6.16.00 xrootd=4.9.1 scons=3.1.2 f2c gcc_linux-64=7 gxx_linux-64=7 gfortran_linux-64=7 libtiff swig
+    ```
 
 # INSTALLATION:
 - Make a folder on SLAC where you want the ACD_Calibration to live, for example: 
@@ -25,13 +29,7 @@ git clone git@github.com:fermi-lat/Install_ACD_Calibration.git ACD_calib_github_
 FOLLOW THESE STEPS BEFORE INSTALLING: 
 - Before Setup, You NEED a conda environment. In the default case, miniconda is used, with a setup pointing to the directory of the user abhishek. You need to:
     1. Make sure the github folder name is set to "ACD_calib_github_software" and not "Install_ACD_Calibration". 
-    2. Install miniconda (If you use anything other than miniconda, make the changes in the setup.sh file too, namely In setup_package.sh, change CONDA_PREFIX path from "$HOME/miniconda" to your directory with the newly installed conda)
-    3. You also need to create a special conda environemnt called "acd_env" which will be used by this code. (Note you can use some other name, if you use anything other than acd_env, make the changes in setup_package.sh) After activating conda run:
-    ```bash 
-    conda create -n acd_env -c conda-forge python=2.7.18 root=6.16.00 xrootd=4.9.1 scons=3.1.2 f2c gcc_linux-64=7 gxx_linux-64=7 gfortran_linux-64=7 libtiff swig
-    ```
-    > [!NOTE]
-    > If everything was done correctly, source ${CONDA_PREFIX}/etc/profile.d/conda.sh should activate your conda setup, If you get a conda error during the setup, something went wrong in the setup while reading your conda environment.
+    2. If everything was done correctly, source ${CONDA_PREFIX}/etc/profile.d/conda.sh should activate your conda setup, If you get a conda error during the setup, something went wrong in the setup while reading your conda environment.
 - You should be ready to run the install using ```bash source setup_package.sh``` which should do eveything for you! 
 - On every prompt answer yes/no as required (In an ideal install, everything is answered Yes)
 - Check the error and install logs, if everything went well your build_err log will be empty! 
