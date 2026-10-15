@@ -59,7 +59,7 @@ os.system(sysCom)
 ```  
 should be commented out 
 
-### For Running Normally (By default all of there are already commented out, just check to make sure before running):
+### For Running Normally:
 - Uncomment the lines that were commented out for TESTING (see above) in  AcdReportUtil and AcdReportTrend 
 
 
