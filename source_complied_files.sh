@@ -11,7 +11,7 @@
 # Initialize:
 cd ..
 MY_DIR=$(pwd)
-export CONDA_PREFIX=/sdf/home/a/abhishek/miniconda
+export CONDA_PREFIX=$HOME/miniconda
 export PATH=${CONDA_PREFIX}/bin/:$PATH
 source ${CONDA_PREFIX}/etc/profile.d/conda.sh
 conda activate acd_test2
