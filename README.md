@@ -3,7 +3,7 @@
 - DGreen_ACD_Calib_Constants_Memo.pdf: Memo from David Green regarding setup of ACD calibrations in previous (afs) setup from https://confluence.slac.stanford.edu/spaces/SCIGRPS/pages/132221608/ACD+Calibrations+Monthly+Update
 - Other supplimentary files include the fermi_ground_bin_files are supplemntary files used to help with the install.
 
-# PRERequisite:
+# Pre-requisite:
 1. Install miniconda (If you use anything other than miniconda, make the changes in the setup.sh file too, namely In setup_package.sh, change CONDA_PREFIX path from "$HOME/miniconda" to your directory with the newly installed conda)
 2. You also need to create a special conda environemnt called "acd_env" which will be used by this code. (Note you can use some other name, if you use anything other than acd_env, make the changes in setup_package.sh) After activating conda run:
     ```bash 
