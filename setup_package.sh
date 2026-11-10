@@ -4,10 +4,13 @@
 #
 # Assumes you have a working conda environment
 #
-# If not use: 
+# If not follow these steps: 
 #
-# conda create -n acd_env -c conda-forge python=2.7.18 root=6.16.00 xrootd=4.9.1 scons=3.1.2 f2c gcc_linux-64=7 gxx_linux-64=7 gfortran_linux-64=7 libtiff swig
-# if you reinstall conda, there might be some post install issues in the library links, see post install log for fix.
+# conda create -n acd_env -c conda-forge python=2.7.18 root=6.16.00 xrootd=4.9.1 scons=3.1.2 f2c libtiff swig
+# conda activate acd_env
+# conda install -c conda-forge gcc_linux-64=7 gxx_linux-64=7 gfortran_linux-64=7
+#
+# If you reinstall conda, there might be some post install issues in the library links, see post install log for fix.
 #
 # Initialize:
 
