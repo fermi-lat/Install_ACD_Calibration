@@ -5,9 +5,11 @@
 
 # Pre-requisite:
 1. Install miniconda (If you use anything other than miniconda, make the changes in the setup.sh file too, namely In setup_package.sh, change CONDA_PREFIX path from "$HOME/miniconda" to your directory with the newly installed conda)
-2. You also need to create a special conda environemnt called "acd_env" which will be used by this code. (Note you can use some other name, if you use anything other than acd_env, make the changes in setup_package.sh) After activating conda run:
+2. You also need to create a special conda environemnt called "acd_env" which will be used by this code. (Note you can use some other name, if you use anything other than acd_env, make the changes in setup_package.sh) After activating conda run the following three commands:
     ```bash 
-    conda create -n acd_env -c conda-forge python=2.7.18 root=6.16.00 xrootd=4.9.1 scons=3.1.2 f2c gcc_linux-64=7 gxx_linux-64=7 gfortran_linux-64=7 libtiff swig
+    conda create -n acd_env -c conda-forge python=2.7.18 root=6.16.00 xrootd=4.9.1 scons=3.1.2 f2c libtiff swig
+    conda activate acd_env
+    conda install -c conda-forge gcc_linux-64=7 gxx_linux-64=7 gfortran_linux-64=7
     ```
 
 # INSTALLATION:
