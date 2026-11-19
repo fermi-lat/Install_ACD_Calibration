@@ -47,7 +47,7 @@ bash source setup_package.sh
 Note: If you get minor warnings you can ignore, but in case of major errors please contact the developers.
 
 ##
-## If there are no erros, congrats the ACD Calibration tools are installed!
+## If there are no errors, congrats the ACD Calibration tools are installed!
 ##
 
 # USAGE (NOTE: INITIAL SETUP FOR TESTING AND NORMAL USE CASES ARE DIFFERENT, DEFAULT is TESTING):
