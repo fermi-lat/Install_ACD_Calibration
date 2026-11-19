@@ -46,6 +46,9 @@ bash source setup_package.sh
 - Check the error and install logs, if everything went well your build_err log will be empty! 
 Note: If you get minor warnings you can ignore, but in case of major errors please contact the developers.
 
+##
+## If there are no erros, congrats the ACD Calibration tools are installed!
+##
 
 # USAGE (NOTE: INITIAL SETUP FOR TESTING AND NORMAL USE CASES ARE DIFFERENT, DEFAULT is TESTING):
 As a failsafe, by default the codes are set to write only in your home directory and not update </sdf/group/fermi/ground/releases/monitor/ACD>, this is to make sure that the code is running properly before the files are written in the main ACD Calibrations directory.
