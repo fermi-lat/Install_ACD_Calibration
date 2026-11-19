@@ -37,10 +37,10 @@ FOLLOW THESE STEPS BEFORE INSTALLING:
 
 ## Now you are ready to install the ACD calibration software, next steps:
 
-- You should be ready to run the install using ```bash source setup_package.sh``` which should do eveything for you! So run the following:
+- You should be ready to run the install using ```source setup_package.sh``` which should do eveything for you! So run the following:
 ```bash
 cd ACD_calib_github_software
-bash source setup_package.sh
+source setup_package.sh
 ``` 
 - On every prompt answer yes/no as required (In an ideal install, everything is answered Yes)
 - Check the error and install logs, if everything went well your build_err log will be empty! 
