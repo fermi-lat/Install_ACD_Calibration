@@ -19,9 +19,13 @@ mkdir ACD_Calibration
 ```bash 
 cd ACD_Calibration
 ``` 
-and 
+and based on how your github is set do either
 ```bash
 git clone git@github.com:fermi-lat/Install_ACD_Calibration.git ACD_calib_github_software
+
+OR
+
+git clone https://github.com/fermi-lat/Install_ACD_Calibration.git ACD_calib_github_software
 ``` 
 > [!NOTE]
 > Make sure the github folder name is set to "ACD_calib_github_software" and not "Install_ACD_Calibration". 
